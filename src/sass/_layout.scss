@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $brand-font;
+  font-size: 18px;
+  line-height: 1.7;
+  color: $section-color;
+  background-color: $bright-color;
+}
+
+// Header
+
+.grid-header {
+  display: grid;
+  grid-template-columns: 66% 13% 4% 13% 4%;
+  grid-template-rows: auto;
+
+  &_second {
+    grid-column-start: 2;
+    grid-column-end: 2;
+  }
+
+  &_third {
+    grid-column-start: 3;
+    grid-column-end: 3;
+  }
+
+  &_fourth {
+    grid-column-start: 4;
+    grid-column-end: 4;
+  }
+
+  &_fifth {
+    grid-column-start: 5;
+    grid-column-end: 5;
+  }
+}
+
+.header {
+  background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.header_wrapper {
+  text-align: center;
+  z-index: 999;
+  box-shadow: 0 0 2px -1px $section-color;
+}
+
+.item {
+  border-left: 1px solid $section-color;
+  padding: 5px 2px;
+}
+
+.lower {
+  margin: 5% 2% 2% 15%;
+  background-color: #ffffff;
+  padding: 10px 0 0 0;
+  box-shadow: 0 0 2px -1px $section-color;
+}
+
+// Sidebar
+
+.sidenav {
+  height: 100%;
+  width: 260px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: $dark-color;
+  opacity: 0.9;
+  padding-top: 20px;
+}
+
+.sidenav a:hover {
+  background-color: $paragraph-color;
+  border-left: 5px solid $brand-main-color;
+  color: $bright-color;
+
+  .small-icon {
+    filter: invert(95%) sepia(11%) saturate(1135%) hue-rotate(311deg)
+      brightness(125%) contrast(92%);
+  }
+}
+
+.sidenav a {
+  padding: 15px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: $section-color;
+  display: block;
+}
+
+.two-columns {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  max-width: 260px;
+}
+
+// General Statistic
+
+.grid-main {
+  @include grid-main;
+}
+
+.center {
+  justify-self: center;
+  margin: 20px 0;
+}
+
+.border {
+  border: solid 1px $bright-grey;
+  display: inline-block;
+  padding: 12px 0 12px 10px;
+  border-radius: 7px;
+  margin-right: 15px;
+}
+
+.podkres:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: $bright-grey;
+  margin: 55px 0;
+}
+
+.date {
+  border: none;
+  color: $dark-color;
+  text-align: center;
+}
+
+.line {
+  border-left: 1px solid $bright-grey;
+  padding: 0;
+}
+
+table {
+  margin-bottom: 70px;
+  border-collapse: collapse;
+
+  .underline {
+    border-bottom: 1px solid $bright-grey;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    z-index: 9999;
+  }
+
+  .underline-top {
+    border-top: 1px solid $bright-grey;
+  }
+}
+
+.stretch {
+  padding-right: 200px;
+}
+
+.empty {
+  padding-right: 60px;
+  border-bottom: none;
+}
