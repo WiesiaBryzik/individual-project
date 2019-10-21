@@ -1,0 +1,22 @@
+.date {
+  border: none;
+  color: $dark-color;
+  text-align: center;
+}
+
+.line-vertical {
+  border-left: 1px solid $bright-grey;
+  padding: 0;
+}
+
+.border {
+  border: solid 1px $bright-grey;
+  display: inline-block;
+  padding: 12px 0 12px 10px;
+  border-radius: 7px;
+  margin-right: 15px;
+}
+
+.border-bottom {
+  border-bottom: 1px solid $bright-grey;
+}

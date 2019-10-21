@@ -1,0 +1,58 @@
+// Header
+
+.grid-header {
+  display: grid;
+  grid-template-columns: 67% 13% 4% 13% 4%;
+  grid-template-rows: auto;
+
+  &_second {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &_third {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+  }
+
+  &_fourth {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  &_fifth {
+    grid-column-start: 5;
+    grid-column-end: 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.header {
+  background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  top: 0;
+}
+
+.header_wrapper {
+  text-align: center;
+  box-shadow: 0 0 2px -1px $section-color;
+}
+
+.item {
+  padding: 15px 0;
+  border-left: 1px solid $bright-grey;
+  position: relative;
+}

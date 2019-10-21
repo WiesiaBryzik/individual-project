@@ -1,0 +1,49 @@
+.sidenav {
+  height: 150px;
+  width: 240px;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: $dark-color;
+  opacity: 0.9;
+  padding-top: 20px;
+}
+
+.menu {
+  height: 100%;
+  width: 240px;
+  position: fixed;
+  z-index: 3;
+  top: 150px;
+  left: 0;
+  background-color: $dark-color;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 15px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: $section-color;
+  display: block;
+  border-left: 5px solid transparent;
+}
+
+.sidenav a:hover {
+  background-color: $paragraph-color;
+  border-color: $brand-main-color;
+  color: $bright-color;
+
+  .small-icon {
+    filter: invert(95%) sepia(11%) saturate(1135%) hue-rotate(311deg)
+      brightness(125%) contrast(92%);
+  }
+}
+
+.border-top {
+  border-top: 1px solid $paragraph-color;
+  position: relative;
+  margin-top: 25px;
+  padding-top: 5px;
+}

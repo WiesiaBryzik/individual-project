@@ -8,12 +8,13 @@
 @import 'components/images';
 @import 'components/typography';
 @import 'components/buttons';
-
-// @import 'components/form_field';
+@import 'components/table';
+@import 'components/calendar';
 
 
 // /* Sections */
-// @import 'section/registration_form';
+@import 'sections/sidebar';
+@import 'sections/header';
 
 // /* Pages / Views */
 // @import 'pages/registration';

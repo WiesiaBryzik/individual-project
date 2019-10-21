@@ -1,0 +1,28 @@
+table {
+  margin-bottom: 70px;
+  border-collapse: collapse;
+
+  .underline {
+    border-bottom: 1px solid $bright-grey;
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
+
+  .underline-top {
+    border-top: 1px solid $bright-grey;
+  }
+}
+
+table td {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.stretch {
+  padding-right: 200px;
+}
+
+.empty {
+  padding-right: 60px;
+  border-bottom: none;
+}

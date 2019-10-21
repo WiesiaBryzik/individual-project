@@ -12,91 +12,96 @@
 <body>
   <nav>
     <div class="sidenav">
-      <div class="two-columns">
-        <div>
-          <p class="logo">Just do it</p>
-        </div>
-        <div>
+      <div class="row">
+        <p class="logo">Just do it</p>
+        <div class="hamburger">
           <button class="menu-button"></button>
         </div>
       </div>
-      <a href="#"><img class="small-icon" src="images/icons/general.svg"></span>General</a>
-      <a href="#"><img class="small-icon" src="images/icons/details.svg">Details</a>
-      <a href="#"><img class="small-icon" src="images/icons/links.svg">Links</a>
-      <a href="#"><img class="small-icon" src="images/icons/banners.svg">Banners</a>
-      <a href="#"><img class="small-icon" src="images/icons/personaldata.svg">Personal
-        data</a>
-      <a href="#"><img class="small-icon" src="images/icons/payout.svg">Payout</a>
-      <a href="#"><img class="small-icon" src="images/icons/postback.svg">Postback</a>
-    </div>
-    <div>
-
+      <div class="menu">
+        <a href="#"><img class="small-icon small-icon_margin" src="images/icons/general.svg">General</a>
+        <a href="#"><img class="small-icon small-icon_margin" src="images/icons/details.svg">Details</a>
+        <a href="#"><img class="small-icon small-icon_margin" src="images/icons/links.svg">Links</a>
+        <a href="#"><img class="small-icon small-icon_margin" src="images/icons/banners.svg">Banners</a>
+        <a href="#"><img class="small-icon small-icon_margin" src="images/icons/personaldata.svg">Personal
+          data</a>
+        <a href="#"><img class="small-icon small-icon_margin" src="images/icons/payout.svg">Payout</a>
+        <a href="#"><img class="small-icon small-icon_margin" src="images/icons/postback.svg">Postback</a>
+        <div class="border-top dotted-active">
+          <p class="section-header"> Your manager</p>
+          <div class="row">
+            <img class="photo" src="images/manager.jpeg">
+            <p class="link-large">Mikhael E.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </nav>
 
-  <header class=" header">
+  <header class="header">
     <div class="grid-header header_wrapper">
       <div class="item grid-header_second">
-        <img class="icon" src="images/icons/wallet.svg">
+        <img class="small-icon" src="images/icons/wallet.svg">
         <a class="page-header">$1,500.00</a>
-        <img class="icon" src="images/icons/arrow-down-small.svg">
+        <img class="small-icon" src="images/icons/arrow-down-small.svg">
       </div>
       <div class="item grid-header_third">
-        <div class="dotted">
-          <img class="icon" src="images/icons/notification.svg">
-          <div class="dot"></div>
+        <div class="dotted-main-color">
+          <img class="small-icon" src="images/icons/notification.svg">
         </div>
       </div>
       <div class="item grid-header_fourth">
-        <img class="icon" src="images/icons/profile.svg">
-        <a href="images/icons/profile.svg" class="link-small">Leonardo Dicaprio</a>
+        <img class="small-icon" src="images/icons/profile.svg">
+        <a href="images/icons/profile.svg" class="link-large">Leonardo Dicaprio</a>
       </div>
       <div class="item grid-header_fifth">
-        <img class="icon" src="images/icons/quit.svg">
+        <img class="small-icon" src="images/icons/quit.svg">
       </div>
 
     </div>
   </header>
 
-  <section>
+  <section class="container">
     <div class="grid-main lower">
       <div class="grid-main_first">
         <p class="section-header">General Statistic</p>
       </div>
-      <div class="grid-main_second center">
-        <div class="podkres">
-          <div class="border">
-            <input class="date text-dark" type="date" value="2016-05-16">
-            <input class="date text-dark line" type="date" value="2016-05-16">
-            <a href="#"><img class="small-icon" src="images/icons/calendar.svg"></a>
-          </div>
-          <button class=" button robocza"><a href="#"><img class="small-icon icon-brighter"
-                src="images/icons/refresh.svg"></a></button>
+      <div class="grid-main_second border-bottom">
+        <div class="border center">
+          <input class="date text-dark" type="date" value="2016-05-16">
+          <input class="date text-dark line-vertical" type="date" value="2016-05-16">
+          <a href="#"><img class="small-icon small-icon_margin" src="images/icons/calendar.svg"></a>
         </div>
+        <button class=" button-orange square"><a href="#"><img class="small-icon icon-brighter"
+              src="images/icons/refresh.svg"></a></button>
       </div>
       <div class="grid-main_third center">
-        <table>
-          <tr>
-            <td class="text stretch underline">Visit Signups</td>
-            <td class="text-dark underline">124</td>
-            <td class="empty"></td>
-            <td class="text stretch underline">Net deposit</td>
-            <td class="text-dark underline">564</td>
-          </tr>
-          <tr>
-            <td class="text stretch underline">FTD</td>
-            <td class="text-dark underline">445</td>
-            <td class="empty"></td>
-            <td class="text stretch underline">Turn over</td>
-            <td class="text-dark underline">432</td>
-          </tr>
-        </table>
+        <div class="scroll-wrapper">
+          <table>
+            <tr>
+              <td class="text stretch underline">Visit Signups</td>
+              <td class="text-dark underline">124</td>
+              <td class="empty"></td>
+              <td class="text stretch underline">Net deposit</td>
+              <td class="text-dark underline">564</td>
+            </tr>
+            <tr>
+              <td class="text stretch underline">FTD</td>
+              <td class="text-dark underline">445</td>
+              <td class="empty"></td>
+              <td class="text stretch underline">Turn over</td>
+              <td class="text-dark underline">432</td>
+            </tr>
+          </table>
+        </div>
       </div>
       <div class="grid-main_fourth">
         <p class="text">Earnings chart</p>
       </div>
       <div class="grid-main_fifth center">
-        <img src="images/chart.png">
+        <div class="scroll-wrapper">
+          <img src="images/chart.png">
+        </div>
       </div>
     </div>
   </section>
@@ -107,102 +112,109 @@
         <p class="section-header">Links</p>
       </div>
       <div class="grid-main_second center">
-        <button class="button"><a href="#" class="link-large"> <span class="text-light">+ add new </span></a></button>
+        <button class="button-orange"><a href="#" class="link-large"> <span class="text-light">+ add new
+            </span></a></button>
       </div>
       <div class="grid-main_third center">
-        <table>
-          <tr class="highlight">
-            <td class="underline underline-top text stretch">Home page</td>
-            <td class="underline underline-top stretch"><a class="link-large"
-                href="http://www.homepage.com/">http://www.homepage.com</a></td>
-            <td class="underline underline-top"><a href="#"><img class="small-icon link-icon link-color"
-                  src="images/icons/links.svg"></a></td>
-            <td class="underline underline-top"><a href="#"><img class="small-icon link-icon"
-                  src="images/icons/trash.svg"></a></td>
-          </tr>
-          <tr class="highlight">
-            <td class="underline text">Currently offer</td>
-            <td class="underline"><a class="link-large" href="http://www.currently.com/">http://www.currently.com</a>
-            </td>
-            <td class="underline underline-top"><a href="#"><img class="small-icon link-icon link-color"
-                  src="images/icons/links.svg"></a></td>
-            <td class="underline underline-top"><a href="#"><img class="small-icon link-icon"
-                  src="images/icons/trash.svg"></a></td>
-          </tr>
-          <tr class="highlight">
-            <td class="underline text">Blurpix</td>
-            <td class="underline"><a class="link-large" href="http://www.bluprix.com/">http://www.bluprix.com</a></td>
-            <td class="underline underline-top"><a href="#"><img class="small-icon link-icon link-color"
-                  src="images/icons/links.svg"></a></td>
-            <td class="underline underline-top"><a href="#"><img class="small-icon link-icon"
-                  src="images/icons/trash.svg"></a></td>
-          </tr>
-          <tr class="highlight">
-            <td class="underline text">Your Site</td>
-            <td class="underline"><a class="link-large" href="http://www.yoursite.com/">http://www.yoursite.com</a></td>
-            <td class="underline underline-top"><a href="#"><img class="small-icon link-icon link-color"
-                  src="images/icons/links.svg"></a></td>
-            <td class="underline underline-top"><a href="#"><img class="small-icon link-icon"
-                  src="images/icons/trash.svg"></a></td>
-          </tr>
-          <tr class="highlight">
-            <td class="underline text">Google</td>
-            <td class="underline"><a class="link-large" href="http://www.google.com/">http://www.google.com</a></td>
-            <td class="underline underline-top"><a href="#"><img class="small-icon link-icon link-color"
-                  src="images/icons/links.svg"></a></td>
-            <td class="underline underline-top"><a href="#"><img class="small-icon link-icon"
-                  src="images/icons/trash.svg"></a></td>
-          </tr>
-          <tr class="highlight">
-            <td class="underline text">Facebook</td>
-            <td class="underline"><a class="link-large" href="http://www.facebook.com/">http://www.facebook.com</a></td>
-            <td class="underline underline-top"><a href="#"><img class="small-icon link-icon link-color"
-                  src="images/icons/links.svg"></a></td>
-            <td class="underline underline-top"><a href="#"><img class="small-icon link-icon"
-                  src="images/icons/trash.svg"></a></td>
-          </tr>
-          <tr class="highlight">
-            <td class="underline text">Dashboard</td>
-            <td class="underline"><a class="link-large" href="http://www.dashboard.com/">http://www.dashboard.com</a>
-            </td>
-            <td class="underline underline-top"><a href="#"><img class="small-icon link-icon link-color"
-                  src="images/icons/links.svg"></a></td>
-            <td class="underline underline-top"><a href="#"><img class="small-icon link-icon"
-                  src="images/icons/trash.svg"></a></td>
-          </tr>
-          <tr class="highlight">
-            <td class="underline text">Blurax</td>
-            <td class="underline"><a class="link-large" href="http://www.blurax.com/">http://www.blurax.com</a></td>
-            <td class="underline underline-top"><a href="#"><img class="small-icon link-icon link-color"
-                  src="images/icons/links.svg"></a></td>
-            <td class="underline underline-top"><a href="#"><img class="small-icon link-icon"
-                  src="images/icons/trash.svg"></a></td>
-          </tr>
-          <tr class="highlight">
-            <td class="underline text">Piece of Wine</td>
-            <td class="underline"><a class="link-large"
-                href="http://www.pieceofwine.com/">http://www.pieceofwine.com</a></td>
-            <td class="underline underline-top"><a href="#"><img class="small-icon link-icon link-color"
-                  src="images/icons/links.svg"></a></td>
-            <td class="underline underline-top"><a href="#"><img class="small-icon link-icon"
-                  src="images/icons/trash.svg"></a></td>
-          </tr>
-          <tr class="highlight">
-            <td class="underline text">Twitter</td>
-            <td class="underline"><a class="link-large" href="http://www.twitter.com/">http://www.twitter.com</a></td>
-            <td class="underline underline-top"><a href="#"><img class="small-icon link-icon link-color"
-                  src="images/icons/links.svg"></a></td>
-            <td class="underline underline-top"><a href="#"><img class="small-icon link-icon"
-                  src="images/icons/trash.svg"></a></td>
-          </tr>
-        </table>
+        <div class="scroll-wrapper">
+          <table>
+            <tr class="highlight">
+              <td class="underline underline-top text stretch">Home page</td>
+              <td class="underline underline-top stretch"><a class="link-large"
+                  href="http://www.homepage.com/">http://www.homepage.com</a></td>
+              <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon link-color"
+                    src="images/icons/links.svg"></a></td>
+              <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon"
+                    src="images/icons/trash.svg"></a></td>
+            </tr>
+            <tr class="highlight">
+              <td class="underline text">Currently offer</td>
+              <td class="underline"><a class="link-large" href="http://www.currently.com/">http://www.currently.com</a>
+              </td>
+              <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon link-color"
+                    src="images/icons/links.svg"></a></td>
+              <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon"
+                    src="images/icons/trash.svg"></a></td>
+            </tr>
+            <tr class="highlight">
+              <td class="underline text">Blurpix</td>
+              <td class="underline"><a class="link-large" href="http://www.bluprix.com/">http://www.bluprix.com</a></td>
+              <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon link-color"
+                    src="images/icons/links.svg"></a></td>
+              <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon"
+                    src="images/icons/trash.svg"></a></td>
+            </tr>
+            <tr class="highlight">
+              <td class="underline text">Your Site</td>
+              <td class="underline"><a class="link-large" href="http://www.yoursite.com/">http://www.yoursite.com</a>
+              </td>
+              <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon link-color"
+                    src="images/icons/links.svg"></a></td>
+              <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon"
+                    src="images/icons/trash.svg"></a></td>
+            </tr>
+            <tr class="highlight">
+              <td class="underline text">Google</td>
+              <td class="underline"><a class="link-large" href="http://www.google.com/">http://www.google.com</a></td>
+              <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon link-color"
+                    src="images/icons/links.svg"></a></td>
+              <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon"
+                    src="images/icons/trash.svg"></a></td>
+            </tr>
+            <tr class="highlight">
+              <td class="underline text">Facebook</td>
+              <td class="underline"><a class="link-large" href="http://www.facebook.com/">http://www.facebook.com</a>
+              </td>
+              <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon link-color"
+                    src="images/icons/links.svg"></a></td>
+              <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon"
+                    src="images/icons/trash.svg"></a></td>
+            </tr>
+            <tr class="highlight">
+              <td class="underline text">Dashboard</td>
+              <td class="underline"><a class="link-large" href="http://www.dashboard.com/">http://www.dashboard.com</a>
+              </td>
+              <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon link-color"
+                    src="images/icons/links.svg"></a></td>
+              <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon"
+                    src="images/icons/trash.svg"></a></td>
+            </tr>
+            <tr class="highlight">
+              <td class="underline text">Blurax</td>
+              <td class="underline"><a class="link-large" href="http://www.blurax.com/">http://www.blurax.com</a></td>
+              <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon link-color"
+                    src="images/icons/links.svg"></a></td>
+              <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon"
+                    src="images/icons/trash.svg"></a></td>
+            </tr>
+            <tr class="highlight">
+              <td class="underline text">Piece of Wine</td>
+              <td class="underline"><a class="link-large"
+                  href="http://www.pieceofwine.com/">http://www.pieceofwine.com</a></td>
+              <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon link-color"
+                    src="images/icons/links.svg"></a></td>
+              <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon"
+                    src="images/icons/trash.svg"></a></td>
+            </tr>
+            <tr class="highlight">
+              <td class="underline text">Twitter</td>
+              <td class="underline"><a class="link-large" href="http://www.twitter.com/">http://www.twitter.com</a></td>
+              <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon link-color"
+                    src="images/icons/links.svg"></a></td>
+              <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon"
+                    src="images/icons/trash.svg"></a></td>
+            </tr>
+          </table>
+        </div>
       </div>
       <div class="grid-main_fourth center">
-        <button class="button"><a href="#" class="link-large"> <span class="text-light">+ add new </span></a></button>
+        <button class="button-orange"><a href="#" class="link-large"> <span class="text-light">+ add new
+            </span></a></button>
       </div>
     </div>
   </section>
 
+  <script src="js/script.js"></script>
 </body>
 
 </html>

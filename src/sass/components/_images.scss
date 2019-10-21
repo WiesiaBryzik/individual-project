@@ -1,22 +1,25 @@
 .icon {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   filter: invert(65%) sepia(0%) saturate(0%) hue-rotate(201deg) brightness(92%)
     contrast(88%);
-  margin-top: 4px;
 }
 
 .small-icon {
   width: 25px;
   height: 25px;
-  margin-right: 20px;
   filter: invert(65%) sepia(0%) saturate(0%) hue-rotate(201deg) brightness(92%)
     contrast(88%);
 }
 
+.small-icon_margin {
+  margin-right: 15px;
+}
+
 .small-icon:hover,
 .icon:hover {
-  filter: invert(88%) sepia(0%) saturate(77%) hue-rotate(257deg) brightness(86%) contrast(87%);
+  filter: invert(88%) sepia(0%) saturate(77%) hue-rotate(257deg) brightness(86%)
+    contrast(87%);
 }
 
 .icon-brighter {
@@ -41,15 +44,27 @@
   }
 }
 
-.dotted {
-  position: relative;
+.dotted-main-color:after {
+  @include dotted;
+  background: $brand-main-color;
+  top: 11px;
+  right: 27px;
+  width: 12px;
+  height: 12px;
 }
 
-.dot:after {
-  content: "●";
-  // display: block;
-  position: absolute;
-  font-size: 200%;
-  margin: -70px -3px;
-  color: $brand-main-color;
+.dotted-active:after {
+  @include dotted;
+  background: green;
+  top: 85px;
+  left: 62px;
+  width: 16px;
+  height: 16px;
+}
+
+.photo {
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  margin: 15px 20px 0 20px;
 }

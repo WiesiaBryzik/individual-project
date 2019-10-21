@@ -1,28 +1,26 @@
-.button {
-  @include button-orange;
-  color: #FFFFFF;
-  padding: 10px 10px;
+.button-orange {
+  @include button;
+  background-color: $brand-main-color;
+  border: 1px solid $brand-main-color;
 }
 
-.button:hover {
-  @include button-orange-hover;
+.button-orange:hover {
+  background-color: $link-color-hover;
 }
 
-.robocza {
-  // position: absolute;
-  width: 50px;
-  height: 50px;
+.square {
+  width: 42px;
+  height: 42px;
 }
 
 //  Hamburger
 
 .menu-button {
-  left: 40%;
+  left: 110%;
   top: 30%;
-  width: 35px;
-  height: 35px;
+  width: 28px;
   border: 0;
-  border-top: 3px solid $section-color;
+  border-top: 2px solid $section-color;
   background: transparent;
   position: relative;
 }
@@ -34,14 +32,18 @@
   top: 0;
   left: 0;
   width: 100%;
-  border-top: 4px solid $section-color;
-  transform: translateY(10px);
+  border-top: 2px solid $section-color;
+  transform: translateY(8px);
 }
 
 .menu-button::after {
-  transform: translateY(25px);
+  transform: translateY(18px);
 }
 
-.menu-button:hover {
-  border-top: 3px solid $color-hover;
+.menu-button {
+  &:hover,
+  &:hover:before,
+  &:hover:after {
+    border-top: 2px solid $color-hover;
+  }
 }

@@ -1,11 +1,47 @@
-@mixin button-orange {
-  background-color: $brand-main-color;
-  border: 1px solid $brand-main-color;
+@mixin button {
+  padding: 8px 8px;
+  color: #ffffff;
 }
 
-@mixin button-orange-hover {
-  background-color: $link-color-hover;
+@mixin dotted {
+  content: "";
+  position: absolute;
+  border-radius: 100%;
 }
+
+@mixin grid($prefix) {
+  @for $i from 1 through 12 {
+    .col-#{$prefix}-#{$i} {
+      $width: 100% / 12 * $i;
+      flex: 0 0 $width;
+      max-width: $width;
+    }
+  }
+}
+
+// $list: (
+//   ('first', 1, 10px),
+//   ('second', 2, null),
+//   ('third', 3, null),
+//   ('fourth', 4, 27%),
+//   ('fifth', 5, null)
+// );
+
+// @mixin grid-main {
+//   display: grid;
+//   grid-template-columns: 100%;
+//   grid-template-rows: auto;
+
+//   @for $i from 1 through length($list) {
+//     $item: nth($list, $i);
+
+//     &__#{nth($item, 1)} {
+//       grid-row-start: #{nth($item, 2)};
+//       grid-row-end: #{nth($item, 2)};
+//       margin-left: #{nth($item, 3)}
+//     }
+//   }
+// }
 
 @mixin grid-main {
   display: grid;
@@ -15,7 +51,7 @@
   &_first {
     grid-row-start: 1;
     grid-row-end: 1;
-    margin-left: 10px;
+    border-bottom: 1px solid $bright-grey;
   }
 
   &_second {
