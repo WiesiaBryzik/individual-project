@@ -361,6 +361,13 @@ body {
   padding-right: 15px;
 }
 
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .grid-main {
   display: -ms-grid;
   display: grid;
@@ -412,13 +419,6 @@ body {
   background-color: #ffffff;
   padding: 10px 0 0 0;
   box-shadow: 0 0 8px 1px #E3E3E3;
-}
-
-.row {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 @media (max-width: 767px) {
@@ -475,12 +475,18 @@ body {
     padding: 10px 0 0 0;
     box-shadow: 0 0 8px 1px #E3E3E3;
   }
+  .bottom {
+    margin-bottom: 80px;
+  }
   nav .sidenav .menu-button {
     border-top: 2px solid #333333;
     top: 0;
   }
   nav .sidenav .menu-button:before, nav .sidenav .menu-button:after {
     border-top: 2px solid #333333;
+  }
+  #myChart {
+    visibility: hidden;
   }
 }
 
@@ -705,6 +711,17 @@ body {
   background-color: #FFA200;
 }
 
+.button-grey {
+  padding: 8px 8px;
+  color: #ffffff;
+  background-color: #979797;
+  border: 1px solid #979797;
+}
+
+.button-grey:hover {
+  background-color: #bababa;
+}
+
 .square {
   width: 42px;
   height: 42px;
@@ -714,6 +731,7 @@ body {
   left: 110%;
   top: 30%;
   width: 28px;
+  height: 30px;
   border: 0;
   border-top: 2px solid #979797;
   background: transparent;
@@ -789,6 +807,21 @@ table td {
 
 .border-bottom {
   border-bottom: 1px solid #E3E3E3;
+}
+
+.calendar-center {
+  text-align: center;
+}
+
+#myChart {
+  width: 1000px;
+  height: 500px;
+}
+
+.input-center {
+  padding: 15px;
+  margin-top: 30px;
+  margin-right: 8px;
 }
 
 .sidenav {
@@ -914,5 +947,55 @@ table td {
   padding: 15px 0;
   border-left: 1px solid #E3E3E3;
   position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  overflow: auto;
+  padding: 30px;
+  display: none;
+}
+
+.overlay.show {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.overlay::webkit-scrollbar {
+  display: none;
+}
+
+.modal {
+  max-width: 600px;
+  margin: auto;
+  background-color: #ffffff;
+  position: relative;
+  padding: 30px;
+  display: none;
+}
+
+.modal.show {
+  display: block;
+}
+
+.modal .btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 10px;
 }
 /*# sourceMappingURL=style.css.map */

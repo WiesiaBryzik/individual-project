@@ -10,6 +10,8 @@
 @import 'components/buttons';
 @import 'components/table';
 @import 'components/calendar';
+@import 'components/chart';
+@import 'components/_input';
 
 
 // /* Sections */
@@ -17,4 +19,4 @@
 @import 'sections/header';
 
 // /* Pages / Views */
-// @import 'pages/registration';
+@import 'pages/overlay';

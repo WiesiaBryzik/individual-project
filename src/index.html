@@ -51,11 +51,11 @@
         </div>
       </div>
       <div class="item grid-header_fourth">
-        <img class="small-icon" src="images/icons/profile.svg">
-        <a href="images/icons/profile.svg" class="link-large">Leonardo Dicaprio</a>
+        <img id="profile" class="small-icon" src="images/icons/profile.svg">
+        <a class="link-large">Leonardo Dicaprio</a>
       </div>
       <div class="item grid-header_fifth">
-        <img class="small-icon" src="images/icons/quit.svg">
+        <img id="quit" class="small-icon" src="images/icons/quit.svg">
       </div>
 
     </div>
@@ -66,7 +66,7 @@
       <div class="grid-main_first">
         <p class="section-header">General Statistic</p>
       </div>
-      <div class="grid-main_second border-bottom">
+      <div class="grid-main_second calendar-center border-bottom">
         <div class="border center">
           <input class="date text-dark" type="date" value="2016-05-16">
           <input class="date text-dark line-vertical" type="date" value="2016-05-16">
@@ -100,14 +100,14 @@
       </div>
       <div class="grid-main_fifth center">
         <div class="scroll-wrapper">
-          <img src="images/chart.png">
+          <canvas id="myChart"></canvas>
         </div>
       </div>
     </div>
   </section>
 
-  <section>
-    <div class="grid-main lower">
+  <section class="container">
+    <div class="grid-main lower bottom">
       <div class="grid-main_first">
         <p class="section-header">Links</p>
       </div>
@@ -122,8 +122,8 @@
               <td class="underline underline-top text stretch">Home page</td>
               <td class="underline underline-top stretch"><a class="link-large"
                   href="http://www.homepage.com/">http://www.homepage.com</a></td>
-              <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon link-color"
-                    src="images/icons/links.svg"></a></td>
+              <td class="underline underline-top"><a href="#"><img
+                    class="small-icon small-icon_margin link-icon link-color" src="images/icons/links.svg"></a></td>
               <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon"
                     src="images/icons/trash.svg"></a></td>
             </tr>
@@ -131,16 +131,16 @@
               <td class="underline text">Currently offer</td>
               <td class="underline"><a class="link-large" href="http://www.currently.com/">http://www.currently.com</a>
               </td>
-              <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon link-color"
-                    src="images/icons/links.svg"></a></td>
+              <td class="underline underline-top"><a href="#"><img
+                    class="small-icon small-icon_margin link-icon link-color" src="images/icons/links.svg"></a></td>
               <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon"
                     src="images/icons/trash.svg"></a></td>
             </tr>
             <tr class="highlight">
               <td class="underline text">Blurpix</td>
               <td class="underline"><a class="link-large" href="http://www.bluprix.com/">http://www.bluprix.com</a></td>
-              <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon link-color"
-                    src="images/icons/links.svg"></a></td>
+              <td class="underline underline-top"><a href="#"><img
+                    class="small-icon small-icon_margin link-icon link-color" src="images/icons/links.svg"></a></td>
               <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon"
                     src="images/icons/trash.svg"></a></td>
             </tr>
@@ -148,16 +148,16 @@
               <td class="underline text">Your Site</td>
               <td class="underline"><a class="link-large" href="http://www.yoursite.com/">http://www.yoursite.com</a>
               </td>
-              <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon link-color"
-                    src="images/icons/links.svg"></a></td>
+              <td class="underline underline-top"><a href="#"><img
+                    class="small-icon small-icon_margin link-icon link-color" src="images/icons/links.svg"></a></td>
               <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon"
                     src="images/icons/trash.svg"></a></td>
             </tr>
             <tr class="highlight">
               <td class="underline text">Google</td>
               <td class="underline"><a class="link-large" href="http://www.google.com/">http://www.google.com</a></td>
-              <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon link-color"
-                    src="images/icons/links.svg"></a></td>
+              <td class="underline underline-top"><a href="#"><img
+                    class="small-icon small-icon_margin link-icon link-color" src="images/icons/links.svg"></a></td>
               <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon"
                     src="images/icons/trash.svg"></a></td>
             </tr>
@@ -165,8 +165,8 @@
               <td class="underline text">Facebook</td>
               <td class="underline"><a class="link-large" href="http://www.facebook.com/">http://www.facebook.com</a>
               </td>
-              <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon link-color"
-                    src="images/icons/links.svg"></a></td>
+              <td class="underline underline-top"><a href="#"><img
+                    class="small-icon small-icon_margin link-icon link-color" src="images/icons/links.svg"></a></td>
               <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon"
                     src="images/icons/trash.svg"></a></td>
             </tr>
@@ -174,16 +174,16 @@
               <td class="underline text">Dashboard</td>
               <td class="underline"><a class="link-large" href="http://www.dashboard.com/">http://www.dashboard.com</a>
               </td>
-              <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon link-color"
-                    src="images/icons/links.svg"></a></td>
+              <td class="underline underline-top"><a href="#"><img
+                    class="small-icon small-icon_margin link-icon link-color" src="images/icons/links.svg"></a></td>
               <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon"
                     src="images/icons/trash.svg"></a></td>
             </tr>
             <tr class="highlight">
               <td class="underline text">Blurax</td>
               <td class="underline"><a class="link-large" href="http://www.blurax.com/">http://www.blurax.com</a></td>
-              <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon link-color"
-                    src="images/icons/links.svg"></a></td>
+              <td class="underline underline-top"><a href="#"><img
+                    class="small-icon small-icon_margin link-icon link-color" src="images/icons/links.svg"></a></td>
               <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon"
                     src="images/icons/trash.svg"></a></td>
             </tr>
@@ -191,16 +191,16 @@
               <td class="underline text">Piece of Wine</td>
               <td class="underline"><a class="link-large"
                   href="http://www.pieceofwine.com/">http://www.pieceofwine.com</a></td>
-              <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon link-color"
-                    src="images/icons/links.svg"></a></td>
+              <td class="underline underline-top"><a href="#"><img
+                    class="small-icon small-icon_margin link-icon link-color" src="images/icons/links.svg"></a></td>
               <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon"
                     src="images/icons/trash.svg"></a></td>
             </tr>
             <tr class="highlight">
               <td class="underline text">Twitter</td>
               <td class="underline"><a class="link-large" href="http://www.twitter.com/">http://www.twitter.com</a></td>
-              <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon link-color"
-                    src="images/icons/links.svg"></a></td>
+              <td class="underline underline-top"><a href="#"><img
+                    class="small-icon small-icon_margin link-icon link-color" src="images/icons/links.svg"></a></td>
               <td class="underline underline-top"><a href="#"><img class="small-icon small-icon_margin link-icon"
                     src="images/icons/trash.svg"></a></td>
             </tr>
@@ -214,6 +214,26 @@
     </div>
   </section>
 
+  <div class="overlay" id="overlay">
+    <div class="modal calendar-center" id="myModal">
+      <div class="border-bottom">
+        <h4>Do you really want to Quit?</h4>
+      </div>
+      <button class="js--close-modal button-grey input-center">Cancel</button>
+      <button class="js--close-modal button-orange input-center">Quit</button>
+    </div>
+
+    <div class="modal" id="myModalProfile">
+      <div class="border-bottom">
+        <h4>LOGIN</h4>
+      </div>
+      <input type="text" placeholder="login name" name="uname" required class="input-center">
+      <input type="password" placeholder="password" name="psw" required class="input-center">
+      <button class="js--close-modal button-orange">Enter</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 

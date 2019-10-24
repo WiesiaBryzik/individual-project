@@ -19,6 +19,11 @@ body {
   padding-right: 15px;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 // General Statistic
 
 .grid-main {
@@ -38,34 +43,6 @@ body {
 }
 
 // responsive
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-// .col-sm-1 {
-//   flex: 0 0 8.33333%;
-//   max-width: 8.33333%;
-// }
-
-// .col-sm-2 {
-//   flex: 0 0 16.66667%;
-//   max-width: 16.66667%;
-// }
-
-// .col-sm-3 {
-//   flex: 0 0 25%;
-//   max-width: 25%;
-// }
-
-// @for $i from 1 through 12 {
-//   .col-sm-#{$i} {
-//     $width: 100% / 12 * $i;
-//     flex: 0 0 $width;
-//     max-width: $width;
-//   }
-// }
 
 @media (max-width: 767px) {
   .scroll-wrapper {
@@ -133,6 +110,10 @@ body {
     box-shadow: 0 0 8px 1px $bright-grey;
   }
 
+  .bottom {
+    margin-bottom: 80px;
+  }
+
   nav .sidenav .menu-button {
     border-top: 2px solid $paragraph-color;
     top: 0;
@@ -144,7 +125,12 @@ body {
       border-top: 2px solid $paragraph-color;
     }
   }
+
+  #myChart {
+    visibility: hidden;
+  }
 }
+
 @media (min-width: 768px) and (max-width: 991px) {
   nav .sidenav {
     max-width: 90px;
